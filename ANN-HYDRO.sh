@@ -75,9 +75,9 @@ then
       
   
 else
-    zenity --info --text="select peptide training set" 
+    zenity --info --text="select peptide training set" --width 150 --height 150 
 	   train_peptides=$(zenity --file-selection --filename=$PWD)
-    zenity --info --text="select peptide testing set" 
+    zenity --info --text="select peptide testing set" --width 150 --height 150
     test_peptides=$(zenity --file-selection --title="select peptide testing set"--filename=$PWD)
     param=($(zenity --forms --title="prediction parameters" \
 	   --separator=" " \
